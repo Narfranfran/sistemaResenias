@@ -93,11 +93,12 @@
         <input type="submit" value="INSCRIBIRSE AL FICHERO">
     </form>
 
-    <h2>Jugadores Inscritos en el Fichero (</h2>
+    <h2>Jugadores Inscritos en el Fichero (
     <?php
         //Falta funcion para contar número de jugadores inscritos
     ?>
-    <h2>)</h2>>
+    )</h2>
+    <br>
 
     <table>
         <tr>
