@@ -19,7 +19,7 @@
         <br>
         <h2>Inscribir Jugador</h2>
         <label for="nick">Nickname:</label>
-        <input type="text" name="nick" id="nick" placeholder="Ej: Faker">
+        <input type="text" name="nick" id="nick" placeholder="Ej: Faker" required>
         <label for="nivel">Nivel:</label>
         <select name="nivel" id="nivel">
             <option value="principiante" selected>Principiante (Hierro - Oro)</option>
@@ -27,7 +27,7 @@
             <option value="experto">Experto (Master - Challenger)</option>
         </select>
         <label for="equipo">Nombre del Equipo (Opcional)</label>
-        <input type="text" name="equipo" id="equipo" placeholder="Ej: T1">
+        <input type="text" name="equipo" id="equipo" placeholder="Ej: T1" required>
         <br>
         <input type="submit" value="INSCRIBIRSE AL FICHERO">
     </form>
