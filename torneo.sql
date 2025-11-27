@@ -1,5 +1,5 @@
 --  base de datos
-CREATE DATABASE IF NOT EXISTS torneo
+CREATE DATABASE IF NOT EXISTS torneo;
 USE torneo;
 
 CREATE TABLE IF NOT EXISTS jugadores (
@@ -8,3 +8,4 @@ CREATE TABLE IF NOT EXISTS jugadores (
     nivel VARCHAR(50) NOT NULL,
     equipo VARCHAR(100) NOT NULL DEFAULT 'Sin Equipo'
 );
+
