@@ -92,6 +92,24 @@
         <br>
         <input type="submit" value="INSCRIBIRSE AL FICHERO">
     </form>
+
+    <h2>Jugadores Inscritos en el Fichero (</h2>
+    <?php
+        //Falta funcion para contar número de jugadores inscritos
+    ?>
+    <h2>)</h2>>
+
+    <table>
+        <tr>
+            <th>Nick</th>
+            <th>Nivel</th>
+            <th>Equipo</th>
+        </tr>
+
+        <?php
+            //Hacer el foreach para mostrar el fichero
+        ?>
+    </table>
 </body>
 
 </html>
