@@ -2,10 +2,9 @@
 
 class Jugador {
 
-    public $nick;
-    public $nivel;
-    public $equipo;
-
+    protected $nick;
+    protected $nivel;
+    protected $equipo;
     
     public function __construct($nick, $nivel, $equipo = "Sin Equipo") {
         $this->nick = $nick;
