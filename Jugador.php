@@ -7,8 +7,14 @@ class Jugador {
     protected $equipo;
     
     public function __construct($nick, $nivel, $equipo = "Sin Equipo") {
-        $this->nick = $nick;
-        $this->nivel = $nivel;
-        $this->equipo = $equipo;
+        $this->nick = htmlspecialchars($nick);
+        $this->nivel = htmlspecialchars($nivel);
+        //Si no pone equipo, guargamos "Sin Equipo
+        $this->equipo = empty($equipo) ? "Sin Equipo" : htmlspecialchars($equipo);
+    }
+
+    //Prepara el formato para guardar en el TXT
+    public function getFormatoFichero(){
+        return $this->nick . " | " . $this->nivel . " | " . $this->equipo;
     }
 }
