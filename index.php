@@ -14,7 +14,7 @@ try {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if ($_POST['inscribir']) {
+    if (isset($_POST['inscribir'])) {
         if (! empty($_POST['nick']) && ! empty($_POST['nivel'])) {
 
             // Creamos el objeto
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $mensaje = "Error: El Nick y el Nivel son obligatorios.";
         }
-    } elseif ($_POST['bbdd']) {
+    } elseif (isset($_POST['bbdd'])) {
         // Lógica para volcar a base de datos
         foreach($gestor->obtenerInscritos() as $jugador) {
             $consulta = $conexion->prepare("SELECT nick FROM jugadores WHERE nick = :nick");
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $conexion = null;
 
-    } elseif ($_POST['reiniciar']) {
+    } elseif (isset($_POST['reiniciar'])) {
         // Lógica para reiniciar fichero
         if (file_exists('inscripciones.txt')) {
             unlink('inscripciones.txt');
