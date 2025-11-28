@@ -75,8 +75,8 @@
     <br>
     <form method="post">
         <h2>Acciones del Torneo</h2>
-        <input type="submit" value="Volcar a Base de Datos">
-        <input type="submit" value="Reiniciar Fichero">
+        <input type="submit" name="bbdd" id="bbdd" value="Volcar a Base de Datos">
+        <input type="submit" name="reiniciar" id="reiniciar" value="Reiniciar Fichero">
         <br>
         <h2>Inscribir Jugador</h2>
         <label for="nick">Nickname:</label>
@@ -90,7 +90,7 @@
         <label for="equipo">Nombre del Equipo (Opcional)</label>
         <input type="text" name="equipo" id="equipo" placeholder="Ej: T1" required>
         <br>
-        <input type="submit" value="INSCRIBIRSE AL FICHERO">
+        <input type="submit" name="inscribir" id="inscribir" value="INSCRIBIRSE AL FICHERO">
     </form>
 
     <h2>Jugadores Inscritos en el Fichero (
