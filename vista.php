@@ -95,7 +95,8 @@
 
     <h2>Jugadores Inscritos en el Fichero (
     <?php
-        //Falta funcion para contar número de jugadores inscritos
+        $listaJugadores = $gestor->obtenerInscritos();
+        echo count($listaJugadores);
     ?>
     )</h2>
     <br>
@@ -108,7 +109,13 @@
         </tr>
 
         <?php
-            //Hacer el foreach para mostrar el fichero
+            foreach($listaJugadores as $jugador){
+                echo "<tr>";
+                echo "<td>" . $jugador->getNick() . "</td>";
+                echo "<td>" . $jugador->getNivel() . "</td>";
+                echo "<td>" . $jugador->getEquipo() . "</td>";
+                echo "</tr>";
+            }
         ?>
     </table>
 </body>
